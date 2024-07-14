@@ -34,3 +34,5 @@ public void enterUserPassword(String password) {
 	driver.findElement(loginButton).click();
 }
 }
+
+// | locked_out_user         | secret_sauce |

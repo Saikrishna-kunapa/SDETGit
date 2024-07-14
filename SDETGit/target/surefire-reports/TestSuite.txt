@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.24 s <<< FAILURE! -- in TestSuite
+testRunner.CucumberTestRunner.runScenario["check login is successful", "login page automation"](2) -- Time elapsed: 1.404 s <<< FAILURE!
+java.lang.AssertionError: title mismatch expected [https://www.saucedemo.com/v1/inventory.html] but found [https://www.saucedemo.com/v1/]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.stepDefinitions.LoginSteps.verify_use_entered_into_home_page(LoginSteps.java:75)
+	at ✽.verify use entered into home page(file:///C:/Users/saikr/git/SDETGit/SDETGit/src/test/resources/Feature/login.feature:25)
+

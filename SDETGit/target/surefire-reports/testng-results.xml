@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-14T13:04:52 IST" name="Surefire suite" finished-at="2024-07-14T13:05:04 IST" duration-ms="11864">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-07-14T13:04:52 IST" name="Surefire test" finished-at="2024-07-14T13:05:04 IST" duration-ms="11864">
+      <class name="testRunner.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:04:52 IST" name="setUpClass" finished-at="2024-07-14T13:04:53 IST" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d303498]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:04:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-14T13:04:55 IST" duration-ms="2021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check login is successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:04:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-14T13:04:56 IST" duration-ms="1402" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check login is successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page automation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[title mismatch expected [https://www.saucedemo.com/v1/inventory.html] but found [https://www.saucedemo.com/v1/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: title mismatch expected [https://www.saucedemo.com/v1/inventory.html] but found [https://www.saucedemo.com/v1/]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.stepDefinitions.LoginSteps.verify_use_entered_into_home_page(LoginSteps.java:75)
+at ✽.verify use entered into home page(file:///C:/Users/saikr/git/SDETGit/SDETGit/src/test/resources/Feature/login.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:04:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-14T13:04:58 IST" duration-ms="1381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check login is successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:04:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-14T13:05:04 IST" duration-ms="6584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check login is successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.CucumberTestRunner@2f7298b]" started-at="2024-07-14T13:05:04 IST" name="tearDownClass" finished-at="2024-07-14T13:05:04 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.CucumberTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
